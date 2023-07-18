@@ -13,6 +13,6 @@ export interface Berry {
   soil_dryness: number
   firmness: NamedApiResource
   flavors: BerryFlavorMap[]
-  item: Item
+  item: NamedApiResource
   natural_gift_type: NamedApiResource
 }
