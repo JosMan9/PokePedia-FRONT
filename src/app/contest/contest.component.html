@@ -1,0 +1,16 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Sabor de la baya</th>
+      <th>Color</th>
+    </tr>
+    <tr *ngFor="let contest of contests">
+      <td class="contest-id"> {{contest.id}} </td>
+      <td class="contest-name"> {{contest.name}} </td>
+      <td class="contest-berry">{{contest.berry_flavor.name}} </td>
+      <td class="contest-color">{{contest.names[3].color}} </td>
+    </tr>
+  </table>
+</main>

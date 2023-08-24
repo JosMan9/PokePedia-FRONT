@@ -1,0 +1,81 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  nav {
+    background-color: #000;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+
+    ul {
+      float: right;
+      list-style: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+
+
+      .menu {
+        background-color: black;
+        display: flex;
+
+        &:hover ~ ul {
+          display: inline-block;
+        }
+
+        a {
+          color: white;
+          text-align: center;
+          padding: 1em 1em;
+          text-decoration: none;
+        }
+      }
+
+
+
+      .submenu-bayas, .submenu-concursos, .submenu-encuentros,
+       .submenu-evoluciones, .submenu-juego, .submenu-items,
+       .submenu-locaciones, .submenu-maquina, .submenu-movimientos,
+        .submenu-pokemon {
+        position: absolute;
+        display: none;
+        background-color: black;
+        padding: 0;
+        border-radius: 20px;
+        top: 100%;
+
+        li {
+          line-height: 120%;
+          padding: 10px 15px;
+          text-align: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      .submenu-bayas {
+        width: 8%;
+        left: 26%;
+      }
+
+      .submenu-concursos {
+        width: 8%;
+        left: 31%;
+      }
+
+      .submenu-encuentros {
+        width: 8%;
+        left: 38%;
+      }
+    }
+  }
+}

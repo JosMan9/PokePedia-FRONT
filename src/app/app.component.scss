@@ -1,0 +1,36 @@
+table {
+  width: 70%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #060EE0;
+
+  tr {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    flex-direction: row;
+    .pokemon-id {
+      width: 15%;
+    }
+
+    .pokemon-name {
+      width: 50%;
+
+    }
+
+    .pokemon-types {
+      width: 25%;
+    }
+
+    .pokemon-sprite {
+      display: flex;
+      align-self: center;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  tr, td, th {
+    border: 1px solid #060EE0;
+  }
+}

@@ -1,8 +1,7 @@
-import { Encounter } from "./encounter.model";
-import { NamedApiResource } from "./namedAPIReosurce.mode";
+import { Language } from "./language.model";
 
 export interface VerboseEffect {
-  version: NamedApiResource
-  max_chance: number
-  encounter_details: Encounter[]
+  effect: string
+  short_effect: string
+  language: Language[]
 }

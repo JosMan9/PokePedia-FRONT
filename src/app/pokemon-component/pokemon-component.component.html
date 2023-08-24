@@ -1,1 +1,20 @@
-<p>pokemon-component works!</p>
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Tipos</th>
+      <th>Sprite</th>
+    </tr>
+    <tr *ngFor="let poke of pokemon">
+      <td class="pokemon-id">{{ poke.id }}</td>
+      <td class="pokemon-name">{{ poke.name }}</td>
+      <td class="pokemon-types">
+        {{ poke.types[0].type.name }}
+        <br />
+        <span *ngIf="poke.types.length > 1">{{ poke.types[1].type.name }}</span>
+      </td>
+      <td class="pokemon-sprite"><img [src]="poke.sprites.front_default" alt="" /></td>
+    </tr>
+  </table>
+</main>

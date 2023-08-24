@@ -1,0 +1,17 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Efecto</th>
+      <th>Imagen</th>
+    </tr>
+    <tr *ngFor="let item of items; index as i">
+      <td class="baya-id"> {{i+1}} </td>
+      <td class="baya-name"> {{item.names[7].name}} </td>
+      <td class="baya-efecto"> {{item.effect_entries[0].effect}} </td>
+      <td class="baya-img"> <img [src]="item.sprites.default" alt=""> </td>
+    </tr>
+
+  </table>
+</main>

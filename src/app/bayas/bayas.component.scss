@@ -15,26 +15,24 @@ main {
     tr {
       text-align: center;
       text-transform: capitalize;
-      font-size: 1.5em;
+      font-size: 1em;
       flex-direction: row;
-      .pokemon-id {
-        width: 15%;
+
+      .baya-id {
+        width: 8%;
       }
 
-      .pokemon-name {
-        width: 50%;
-
+      .baya-name {
+        width: 20%;
       }
 
-      .pokemon-types {
-        width: 25%;
+      .baya-efecto {
+        width: 64%;
+        padding: 1%;
       }
 
-      .pokemon-sprite {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        justify-content: center;
+      .baya-img {
+        width: 8%;
       }
     }
 

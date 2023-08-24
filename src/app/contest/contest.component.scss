@@ -15,31 +15,29 @@ main {
     tr {
       text-align: center;
       text-transform: capitalize;
-      font-size: 1.5em;
+      font-size: 1em;
       flex-direction: row;
-      .pokemon-id {
-        width: 15%;
-      }
 
-      .pokemon-name {
-        width: 50%;
-
-      }
-
-      .pokemon-types {
+      .contest-id {
         width: 25%;
       }
 
-      .pokemon-sprite {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        justify-content: center;
+      .contest-name {
+        width: 25%;
+      }
+
+      .contest-baya {
+        width: 25%;
+      }
+
+      .contest-color {
+        width: 25%;
       }
     }
 
     tr, td, th {
       border: 1px solid #060EE0;
+      padding: 1em;
     }
   }
 }
