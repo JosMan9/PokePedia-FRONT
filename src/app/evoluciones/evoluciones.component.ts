@@ -27,7 +27,7 @@ export class EvolucionesComponent implements OnInit {
       })
     ).subscribe((res: NamedAPIResourceList) => {
       console.log("resultados", res);
-      //this.getEvolucionesALL();
+      this.getEvolucionesALL();
     })
   }
 

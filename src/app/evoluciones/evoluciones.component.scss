@@ -1,0 +1,28 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginTable;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 2em;
+      flex-direction: row;
+
+      tr, td, th {
+        border: $borderTable;
+      }
+    }
+  }
+}

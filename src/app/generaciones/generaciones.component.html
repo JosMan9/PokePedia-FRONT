@@ -1,0 +1,14 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Región</th>
+    </tr>
+    <tr *ngFor="let gen of generaciones">
+        <td class="gen-id"> {{gen.id}} </td>
+        <td class="gen-name"> {{gen.names[5].name}} </td>
+        <td class="gen-region"> {{gen.main_region.name}} </td>
+    </tr>
+  </table>
+</main>

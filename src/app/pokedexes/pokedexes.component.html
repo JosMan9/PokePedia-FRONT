@@ -1,0 +1,26 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Región</th>
+    </tr>
+    <tr *ngFor="let pok of pokedexes; index as i">
+      <td class="pokedex-id">{{ pok.id }}</td>
+      <td class="pokedex-name">{{ pok.name }}</td>
+      <td class="pokedex-descripcion">
+        <span *ngIf="pok.descriptions.length == 0 || pok.descriptions[0].description == ''; else conDescripcion"> No description</span>
+        <ng-template #conDescripcion>
+          <span> {{ pok.descriptions[0].description }} </span>
+        </ng-template>
+      </td>
+      <td class="pokedex-region">
+        <span *ngIf="pok.region == null; else conRegion">Sin región</span>
+        <ng-template #conRegion>
+          <span> {{ pok.region.name }} </span>
+        </ng-template>
+      </td>
+    </tr>
+  </table>
+</main>

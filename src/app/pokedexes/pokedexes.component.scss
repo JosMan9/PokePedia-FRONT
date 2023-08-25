@@ -17,31 +17,29 @@ main {
     tr {
       text-align: center;
       text-transform: capitalize;
-      font-size: 1.5em;
+      font-size: 1.1em;
       flex-direction: row;
-      .pokemon-id {
-        width: 15%;
+
+      .pokedex-id {
+        width: 10%;
       }
 
-      .pokemon-name {
+      .pokedex-name {
+        width: 20%;
+      }
+
+      .pokedex-descripcion {
         width: 50%;
-
       }
 
-      .pokemon-types {
-        width: 25%;
-      }
-
-      .pokemon-sprite {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        justify-content: center;
+      .pokedex-region {
+        width: 20%;
       }
     }
 
     tr, td, th {
       border: $borderTable;
+      padding: 1em;
     }
   }
 }

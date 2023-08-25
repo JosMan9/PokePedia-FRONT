@@ -17,31 +17,25 @@ main {
     tr {
       text-align: center;
       text-transform: capitalize;
-      font-size: 1.5em;
+      font-size: 1em;
       flex-direction: row;
-      .pokemon-id {
-        width: 15%;
+
+      .gen-id {
+        width: 20%;
       }
 
-      .pokemon-name {
-        width: 50%;
-
+      .gen-name {
+        width: 40%;
       }
 
-      .pokemon-types {
-        width: 25%;
+      .gen-region {
+        width: 40%;
       }
 
-      .pokemon-sprite {
-        display: flex;
-        align-self: center;
-        width: 100%;
-        justify-content: center;
+      tr, td, th {
+        border: $borderTable;
+        padding: 0.8em;
       }
-    }
-
-    tr, td, th {
-      border: $borderTable;
     }
   }
 }

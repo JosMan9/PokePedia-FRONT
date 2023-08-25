@@ -1,1 +1,12 @@
-<p>evoluciones works!</p>
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+    </tr>
+    <tr *ngFor="let evolucion of evoluciones">
+      <td class="evolucion-id"> {{evolucion.id}} </td>
+      <td class="evolucion-name"> {{evolucion.name}} </td>
+    </tr>
+  </table>
+</main>

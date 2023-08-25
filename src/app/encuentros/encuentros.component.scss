@@ -1,17 +1,19 @@
+@import '../variables';
+
 main
  {
-  background-color: #E5E1B7;
-  margin-left: 5%;
-  margin-right: 5%;
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
   table {
-    width: 70%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border: 1px solid #060EE0;
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
 
     tr {
       text-align: center;
@@ -29,7 +31,7 @@ main
     }
 
     tr, td, th {
-      border: 1px solid #060EE0;
+      border: $borderTable;
     }
   }
  }

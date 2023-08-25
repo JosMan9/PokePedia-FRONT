@@ -7,7 +7,7 @@ export interface Pokedex {
   id: number
   name: string
   is_main_series: boolean
-  descirptions: Description[]
+  descriptions: Description[]
   names: Name[]
   pokemon_species: PokemonEntry[]
   region: NamedApiResource

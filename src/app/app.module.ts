@@ -11,6 +11,8 @@ import { BayasComponent } from './bayas/bayas.component';
 import { ContestComponent } from './contest/contest.component';
 import { EncuentrosComponent } from './encuentros/encuentros.component';
 import { EvolucionesComponent } from './evoluciones/evoluciones.component';
+import { GeneracionesComponent } from './generaciones/generaciones.component';
+import { PokedexesComponent } from './pokedexes/pokedexes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EvolucionesComponent } from './evoluciones/evoluciones.component';
     BayasComponent,
     ContestComponent,
     EncuentrosComponent,
-    EvolucionesComponent
+    EvolucionesComponent,
+    GeneracionesComponent,
+    PokedexesComponent
   ],
   imports: [
     BrowserModule,
