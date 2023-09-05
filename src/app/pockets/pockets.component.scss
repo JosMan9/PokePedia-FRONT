@@ -1,0 +1,40 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.2em;
+      flex-direction: row;
+
+      .pocket-id {
+        width: 20%;
+      }
+
+      .pocket-name {
+        width: 40%;
+      }
+
+      .pocket-categories {
+        width: 40%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

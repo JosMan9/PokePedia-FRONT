@@ -1,0 +1,22 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Generación</th>
+      <th>Región</th>
+    </tr>
+    <tr *ngFor="let grupo of grupos">
+      <td class="grupo-id">{{ grupo.id }}</td>
+      <td class="grupo-name">{{ grupo.name }}</td>
+      <td class="grupo-generacion">{{ grupo.generation.name }}</td>
+      <td class="grupo-region">
+        <span *ngFor="let region of grupo.regions">
+          {{ region.name }}
+          <br/>
+        </span>
+        <span *ngIf="grupo.regions.length == 0"> No Region</span>
+      </td>
+    </tr>
+  </table>
+</main>

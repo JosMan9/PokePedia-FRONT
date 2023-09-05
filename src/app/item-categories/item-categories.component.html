@@ -1,0 +1,14 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Bolsillo</th>
+    </tr>
+    <tr *ngFor="let categoria of categorias">
+      <td class="itemCategory-id"> {{categoria.id}} </td>
+      <td class="itemCategory-name"> {{categoria.name}} </td>
+      <td class="itemCategory-pocket"> {{categoria.pocket.name}} </td>
+    </tr>
+  </table>
+</main>

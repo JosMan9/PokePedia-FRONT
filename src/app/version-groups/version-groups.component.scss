@@ -1,0 +1,45 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .grupo-id {
+        width: 25%;
+      }
+
+      .grupo-name {
+        width: 25%;
+      }
+
+      .grupo-generacion {
+        width: 25%;
+      }
+
+      .grupo-region {
+        width: 25%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 0.5em;
+    }
+  }
+}

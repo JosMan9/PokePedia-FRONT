@@ -1,0 +1,16 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre de la máquina</th>
+      <th>Movimiento</th>
+      <th>Versión de grupo</th>
+    </tr>
+    <tr *ngFor="let maquina of maquinas">
+      <td class="maquina-id"> {{maquina.id}} </td>
+      <td class="maquina-item"> {{maquina.item.name}} </td>
+      <td class="maquina-move"> {{maquina.move.name}} </td>
+      <td class="maquina-group"> {{maquina.version_group.name}} </td>
+    </tr>
+  </table>
+</main>

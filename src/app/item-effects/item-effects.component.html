@@ -1,0 +1,21 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Efecto</th>
+      <th>Items</th>
+    </tr>
+    <tr *ngFor="let efecto of efectos">
+      <td class="efecto-id"> {{efecto.id}} </td>
+      <td class="efecto-name"> {{efecto.name}} </td>
+      <td class="efecto-effect"> {{efecto.effect_entries[0].effect}} </td>
+      <td class="efecto-items">
+        <span *ngFor="let item of efecto.items">
+          {{item.name}}
+          <br>
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

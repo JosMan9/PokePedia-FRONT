@@ -1,0 +1,18 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Categoria</th>
+      <th>Sprite</th>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td class="item-id">{{ item.id }}</td>
+      <td class="item-name">{{ item.name }}</td>
+      <td class="item-category">{{ item.category.name }}</td>
+      <td class="item-sprite">
+        <img [src]="item.sprites.default" alt="">
+      </td>
+    </tr>
+  </table>
+</main>

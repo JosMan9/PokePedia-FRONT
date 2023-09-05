@@ -1,0 +1,47 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin: $marginMain $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .loc-id {
+        width: 10%;
+      }
+
+      .loc-name {
+        width: 25%;
+      }
+
+      .loc-area {
+        width: 25%;
+      }
+
+      .loc-region {
+        width: 25%;
+      }
+
+      .loc-generation {
+        width: 40%;
+      }
+    }
+
+    tr, th, td {
+      border: $borderTable;
+      padding: 1em;
+    }
+  }
+}

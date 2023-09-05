@@ -1,0 +1,40 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .parque-id {
+        width: 10%;
+      }
+
+      .parque-name {
+        width: 50%;
+      }
+
+      .parque-pokemon {
+        width: 40%;
+      }
+    }
+
+    tr, th, td {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

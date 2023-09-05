@@ -1,0 +1,43 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin: $marginMain $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .maquina-id {
+        width: 25%;
+      }
+
+      .maquina-item {
+        width: 25%;
+      }
+
+      .maquina-move {
+        width: 25%;
+      }
+
+      .maquina-group {
+        width: 25%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Áreas</th>
+      <th>Región</th>
+      <th>Generación</th>
+    </tr>
+    <tr *ngFor="let loc of locations">
+      <td class="loc-id"> {{loc.id}} </td>
+      <td class="loc-name"> {{loc.name}} </td>
+      <td class="loc-area">
+        <span *ngFor="let area of loc.areas">
+          {{area.name}}
+          <br>
+        </span>
+      </td>
+      <td class="loc-region">
+        <span *ngIf="loc.region != null; else noRegion">
+          {{loc.region.name}}
+        </span>
+
+        <ng-template #noRegion>
+          <span>No Region</span>
+        </ng-template>
+
+         </td>
+      <td class="loc-generation">
+        <span *ngIf="loc.game_indices.length != 0; else noGen">
+          {{loc.game_indices[0].generation.name}}
+        </span>
+
+        <ng-template #noGen>
+          <span> No Generation </span>
+        </ng-template>
+      </td>
+    </tr>
+
+  </table>
+</main>

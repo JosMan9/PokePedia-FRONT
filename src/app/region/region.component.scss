@@ -1,0 +1,44 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .region-id {
+        width: 10%;
+      }
+
+      .region-name {
+        width: 30%;
+      }
+
+      .region-generation {
+        width: 30%;
+      }
+
+      .region-games {
+        width: 30%;
+      }
+    }
+
+    tr, th, td {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

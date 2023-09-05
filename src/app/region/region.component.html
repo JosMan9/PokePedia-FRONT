@@ -1,0 +1,28 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Generación</th>
+      <th>Juegos Grupo</th>
+    </tr>
+    <tr *ngFor="let region of regiones">
+      <td class="region-id">{{ region.id }}</td>
+      <td class="region-name">{{ region.name }}</td>
+      <td class="region-generation">
+        <span *ngIf="region.main_generation != null; else noGen">
+          {{ region.main_generation.name }}
+        </span>
+        <ng-template #noGen>
+          <span>No Main Generation</span>
+        </ng-template>
+      </td>
+      <td class="region-games">
+        <span *ngFor="let game of region.version_groups">
+          {{ game.name }}
+          <br>
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

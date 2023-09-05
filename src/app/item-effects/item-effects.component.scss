@@ -1,0 +1,44 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.2em;
+      flex-direction: row;
+
+      .efecto-id {
+        width: 25%;
+      }
+
+      .efecto-name {
+        width: 25%;
+      }
+
+      .efecto-effect {
+        width: 25%;
+      }
+
+      .efecto-items {
+        width: 25%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 0.8em;
+    }
+  }
+}

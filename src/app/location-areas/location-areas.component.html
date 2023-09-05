@@ -1,0 +1,28 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Locación</th>
+      <th>Encuentros Pokémon</th>
+      <th>Métodos de encuentro</th>
+    </tr>
+    <tr *ngFor="let area of areas">
+      <td class="areaLoc-id">{{ area.id }}</td>
+      <td class="areaLoc-name">{{ area.name }}</td>
+      <td class="areaLoc-location">{{ area.location.name }}</td>
+      <td class="areaLoc-pokemonEncounters">
+        <span *ngFor="let pokemon of area.pokemon_encounters">
+          {{ pokemon.pokemon.name }}
+          <br />
+        </span>
+      </td>
+      <td class="areaLoc-encounterMethod">
+        <span *ngFor="let method of area.encounter_method_rates">
+          {{ method.encounter_method.name }}
+          <br />
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

@@ -1,0 +1,48 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-left: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .areaLoc-id {
+        width: 10%;
+      }
+
+      .areaLoc-name {
+        width: 20%;
+      }
+
+      .areaLoc-location {
+        width: 20%;
+      }
+
+      .areaLoc-pokemonEncounters {
+        width: 25%;
+      }
+
+      .areaLoc-encounterMethod {
+        width: 25%;
+      }
+    }
+
+    tr, th, td {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

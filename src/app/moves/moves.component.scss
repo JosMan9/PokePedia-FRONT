@@ -1,0 +1,47 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin: $marginMain $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1em;
+      flex-direction: row;
+
+      .move-id {
+        width: 10%;
+      }
+
+      .move-name {
+        width: 20%;
+      }
+
+      .move-gen {
+        width: 20%;
+      }
+
+      .move-type {
+        width: 25%;
+      }
+
+      .move-pokemon {
+        width: 25%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 0.7em;
+    }
+  }
+}

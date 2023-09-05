@@ -1,0 +1,23 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Generación</th>
+      <th>Tipo</th>
+      <th>Pokemon que pueden aprender el movimiento</th>
+    </tr>
+    <tr *ngFor="let move of moves">
+      <td class="move-id"> {{move.id}} </td>
+      <td class="move-name"> {{move.name}} </td>
+      <td class="move-gen"> {{move.generation.name}} </td>
+      <td class="move-type"> {{move.type.name}} </td>
+      <td class="move-pokemon">
+        <span *ngFor="let pokemon of move.learned_by_pokemon">
+          {{pokemon.name}}
+          <br>
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

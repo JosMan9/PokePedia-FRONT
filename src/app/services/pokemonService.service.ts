@@ -47,6 +47,7 @@ import { PokemonSpecies } from '../models/pokemonSpecies/pokemonSpecies.model';
 import { Stat } from '../models/stats/stat.model';
 import { Type } from "@angular/compiler";
 import { Language } from "../models/language.model";
+import { Location } from "../models/locations/location.model";
 
 @Injectable()
 export class PokemonService {

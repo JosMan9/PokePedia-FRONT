@@ -1,0 +1,42 @@
+@import '../_variables.scss';
+
+main {
+  background-color: $colorMain;
+  margin: $marginMain $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin: $marginTable $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.2em;
+      flex-direction: row;
+
+      .item-id {
+        width: 10%;
+      }
+
+      .item-name {
+        width: 40%;
+      }
+
+      .item-cateogory {
+        width: 40%;
+      }
+
+      .item-sprite {
+        width: 10%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+    }
+  }
+}

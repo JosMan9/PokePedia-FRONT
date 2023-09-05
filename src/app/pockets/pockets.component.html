@@ -1,0 +1,19 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Categorías</th>
+    </tr>
+    <tr *ngFor="let pocket of pockets">
+      <td class="pocket-id"> {{pocket.id}} </td>
+      <td class="pocket-name"> {{pocket.name}} </td>
+      <td class="pocket-categories">
+        <span *ngFor="let cat of pocket.categories">
+          {{cat.name}}
+          <br>
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

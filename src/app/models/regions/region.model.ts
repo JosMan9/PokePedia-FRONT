@@ -8,5 +8,5 @@ export interface Region {
   names: Name[]
   main_generation: NamedApiResource
   pokedexes: NamedApiResource[]
-  version_group: NamedApiResource[]
+  version_groups: NamedApiResource[]
 }

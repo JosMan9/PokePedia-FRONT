@@ -13,6 +13,18 @@ import { EncuentrosComponent } from './encuentros/encuentros.component';
 import { EvolucionesComponent } from './evoluciones/evoluciones.component';
 import { GeneracionesComponent } from './generaciones/generaciones.component';
 import { PokedexesComponent } from './pokedexes/pokedexes.component';
+import { VersionGroupsComponent } from './version-groups/version-groups.component';
+import { ItemsComponent } from './items/items.component';
+import { ItemCategoriesComponent } from './item-categories/item-categories.component';
+import { ItemEffectsComponent } from './item-effects/item-effects.component';
+import { PocketsComponent } from './pockets/pockets.component';
+import { LocationsComponent } from './locations/locations.component';
+import { LocationAreasComponent } from './location-areas/location-areas.component';
+import { ParqueCompiComponent } from './parque-compi/parque-compi.component';
+import { RegionComponent } from './region/region.component';
+import { MachineComponent } from './machine/machine.component';
+import { MovesComponent } from './moves/moves.component';
+import { MoveAilmentComponent } from './move-ailment/move-ailment.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +36,19 @@ import { PokedexesComponent } from './pokedexes/pokedexes.component';
     EncuentrosComponent,
     EvolucionesComponent,
     GeneracionesComponent,
-    PokedexesComponent
+    PokedexesComponent,
+    VersionGroupsComponent,
+    ItemsComponent,
+    ItemCategoriesComponent,
+    ItemEffectsComponent,
+    PocketsComponent,
+    LocationsComponent,
+    LocationAreasComponent,
+    ParqueCompiComponent,
+    RegionComponent,
+    MachineComponent,
+    MovesComponent,
+    MoveAilmentComponent
   ],
   imports: [
     BrowserModule,
