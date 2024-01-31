@@ -1,1 +1,19 @@
-<p>move-ailment works!</p>
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Movimientos</th>
+    </tr>
+    <tr *ngFor="let ail of ailments">
+      <td class="ail-id"> {{ail.id}} </td>
+      <td class="ail-name"> {{ail.name}} </td>
+      <td class="ail-moves">
+        <span *ngFor="let move of ail.moves">
+          <br>
+          {{move.name}}
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

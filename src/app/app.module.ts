@@ -25,6 +25,8 @@ import { RegionComponent } from './region/region.component';
 import { MachineComponent } from './machine/machine.component';
 import { MovesComponent } from './moves/moves.component';
 import { MoveAilmentComponent } from './move-ailment/move-ailment.component';
+import { BattleStyleComponent } from './battle-style/battle-style.component';
+import { MoveCategoryComponent } from './move-category/move-category.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { MoveAilmentComponent } from './move-ailment/move-ailment.component';
     RegionComponent,
     MachineComponent,
     MovesComponent,
-    MoveAilmentComponent
+    MoveAilmentComponent,
+    BattleStyleComponent,
+    MoveCategoryComponent
   ],
   imports: [
     BrowserModule,

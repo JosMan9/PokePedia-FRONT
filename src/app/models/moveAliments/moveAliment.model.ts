@@ -1,9 +1,9 @@
+import { Move } from "../moves/move.model"
 import { Name } from "../name.mode"
-import { NamedApiResource } from "../namedAPIReosurce.mode"
 
-export interface MoveAliment {
+export interface MoveAilment {
   id: number
   name: string
-  moves: NamedApiResource[]
+  moves: Move[]
   names: Name[]
 }

@@ -17,18 +17,14 @@ main {
     tr {
       text-align: center;
       text-transform: capitalize;
-      font-size: 1.1em;
+      font-size: 1.5em;
       flex-direction: row;
 
-      .ail-id {
-        width: 10%;
+      .style-id {
+        width: 50%;
       }
 
-      .ail-name {
-        width: 20%;
-      }
-
-      .ail-moves {
+      .style-name {
         width: 50%;
       }
     }

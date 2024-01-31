@@ -1,0 +1,21 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Movimientos</th>
+      <th>Descripcion</th>
+    </tr>
+    <tr *ngFor="let category of categorias">
+      <td class="move-category-id"> {{category.id}} </td>
+      <td class="move-category-name"> {{category.name}} </td>
+      <td class="move-category-moves">
+        <span *ngFor="let move of category.moves">
+          <br>
+          {{move.name}}
+        </span>
+      </td>
+      <td class="move-category-descriptions"> {{category.descriptions[0].description}} </td>
+    </tr>
+  </table>
+</main>

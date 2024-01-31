@@ -27,7 +27,7 @@ import { PalParkArea } from "../models/palParkAreas/palParkArea.model";
 import { Region } from "../models/regions/region.model";
 import { Machine } from "../models/machines/machine.model";
 import { Move } from "../models/moves/move.model";
-import { MoveAliment } from "../models/moveAliments/moveAliment.model";
+import { MoveAilment } from "../models/moveAliments/moveAliment.model";
 import { MoveBattleStyle } from "../models/moveBattleStyles/moveBattleStyle.model";
 import { MoveCateogory } from "../models/moveCategories/moveCategory.model";
 import { MoveDamageClass } from "../models/moveDamageClassses/moveDamageClass.model";
@@ -452,9 +452,9 @@ export class PokemonService {
     return this.http.get<NamedAPIResourceList>(url);
   }
 
-  getMoveAliment(id: string): Observable<MoveAliment> {
+  getMoveAliment(id: string): Observable<MoveAilment> {
     const url = `${this.URL}/move-ailment/${id}`;
-    return this.http.get<MoveAliment>(url);
+    return this.http.get<MoveAilment>(url);
   }
 
 

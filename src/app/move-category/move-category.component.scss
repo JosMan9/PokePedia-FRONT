@@ -20,16 +20,20 @@ main {
       font-size: 1.1em;
       flex-direction: row;
 
-      .ail-id {
-        width: 10%;
+      .move-category-id {
+        width: 25%;
       }
 
-      .ail-name {
-        width: 20%;
+      .move-category-name {
+        width: 25%;
       }
 
-      .ail-moves {
-        width: 50%;
+      .move-category-moves {
+        width: 25%;
+      }
+
+      .move-category-descriptions {
+        width: 25%;
       }
     }
 
