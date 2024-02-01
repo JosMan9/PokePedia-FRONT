@@ -48,6 +48,7 @@ import { Stat } from '../models/stats/stat.model';
 import { Type } from "@angular/compiler";
 import { Language } from "../models/language.model";
 import { Location } from "../models/locations/location.model";
+import { EggGroup } from "../models/egggroups/egggroup.model";
 
 @Injectable()
 export class PokemonService {
@@ -569,13 +570,13 @@ export class PokemonService {
   */
 
   getEggGroups(): Observable<NamedAPIResourceList> {
-    const url = `${this.URL}/move`;
+    const url = `${this.URL}/egg-group`;
     return this.http.get<NamedAPIResourceList>(url);
   }
 
-  getEggGroup(id: string): Observable<Move> {
-    const url = `${this.URL}/move/${id}`;
-    return this.http.get<Move>(url);
+  getEggGroup(id: string): Observable<EggGroup> {
+    const url = `${this.URL}/egg-group/${id}`;
+    return this.http.get<EggGroup>(url);
   }
 
 

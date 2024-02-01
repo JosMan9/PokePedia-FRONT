@@ -12,7 +12,7 @@ export interface Ability {
   generation: NamedApiResource
   names: Name[]
   effect_entries: VerboseEffect[]
-  efect_changes: AbilityEffectChange[]
+  effect_changes: AbilityEffectChange[]
   flavor_text_entries: AbilityFlavorText[]
   pokemon: AbilityPokemon[]
 }

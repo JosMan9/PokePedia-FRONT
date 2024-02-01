@@ -1,0 +1,19 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Pokemon</th>
+    </tr>
+    <tr *ngFor="let egg of gruposHuevo">
+      <td class="egg-id"> {{egg.id}} </td>
+      <td class="egg-name"> {{egg.name}} </td>
+      <td class="egg-pokemon">
+        <span *ngFor="let pokemon of egg.pokemon_species">
+          <br>
+          {{pokemon.name}}
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

@@ -1,0 +1,50 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.1em;
+      flex-direction: row;
+
+      .ability-id {
+        width: 20%;
+      }
+
+      .ability-name {
+        width: 20%;
+      }
+
+      .ability-gen {
+        width: 10%;
+        text-transform: uppercase;
+      }
+
+      .ability-effects {
+        width: 30%;
+      }
+
+      .ability-pokemon {
+        width: 20%;
+      }
+    }
+
+    tr, td, th  {
+      border: $borderTable;
+      padding: 1em;
+    }
+  }
+}

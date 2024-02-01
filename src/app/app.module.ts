@@ -30,6 +30,8 @@ import { MoveCategoryComponent } from './move-category/move-category.component';
 import { MoveDamageClassComponent } from './move-damage-class/move-damage-class.component';
 import { MoveLearnMethodsComponent } from './move-learn-methods/move-learn-methods.component';
 import { MoveTargetComponent } from './move-target/move-target.component';
+import { AbilitiesComponent } from './abilities/abilities.component';
+import { EggGroupsComponent } from './egg-groups/egg-groups.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { MoveTargetComponent } from './move-target/move-target.component';
     MoveCategoryComponent,
     MoveDamageClassComponent,
     MoveLearnMethodsComponent,
-    MoveTargetComponent
+    MoveTargetComponent,
+    AbilitiesComponent,
+    EggGroupsComponent
   ],
   imports: [
     BrowserModule,

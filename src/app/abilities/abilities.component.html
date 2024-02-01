@@ -1,0 +1,28 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Generación</th>
+      <th>Efectos</th>
+      <th>Pokémon</th>
+    </tr>
+    <tr *ngFor="let a of habilidades">
+      <td class="ability-id"> {{a.id}} </td>
+      <td class="ability-name"> {{a.name}} </td>
+      <td class="ability-gen"> {{a.generation.name}} </td>
+      <td class="ability-effects">
+        <span *ngFor="let e of a.effect_entries">
+          <span *ngIf="e.language.name == 'en'">
+            {{e.effect}}
+          </span>
+        </span>
+      </td>
+      <td class="ability-pokemon">
+        <span *ngFor="let pok of a.pokemon">
+          {{pok.pokemon.name}}
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>
