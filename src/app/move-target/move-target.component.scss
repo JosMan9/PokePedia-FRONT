@@ -1,0 +1,47 @@
+@import "../variables";
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.1em;
+      flex-direction: row;
+
+      .target-id {
+        width: 20%;
+      }
+
+      .target-name {
+        width: 30%;
+      }
+
+      .target-description {
+        width: 25%;
+      }
+
+      .target-moves {
+        width: 25%;
+      }
+    }
+
+    tr,
+    td,
+    th {
+      border: $borderTable;
+      padding: 1em;
+    }
+  }
+}

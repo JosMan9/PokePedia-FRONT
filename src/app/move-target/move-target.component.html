@@ -1,0 +1,27 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Movimientos</th>
+    </tr>
+    <tr *ngFor="let t of targets">
+      <td class="target-id">{{ t.id }}</td>
+      <td class="target-name">{{ t.name }}</td>
+      <td class="target-description">
+        <span *ngFor="let des of t.descriptions">
+          <span *ngIf="des.language.name == 'en'">
+            {{ des.description }}
+          </span>
+        </span>
+      </td>
+      <td class="target-moves">
+        <span *ngFor="let move of t.moves">
+          <br />
+          {{ move.name }}
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

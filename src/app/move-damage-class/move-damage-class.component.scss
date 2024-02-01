@@ -1,0 +1,45 @@
+@import '../variables';
+
+main {
+  background-color: $colorMain;
+  margin-left: $marginMain;
+  margin-right: $marginMain;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  table {
+    width: $widthTable;
+    margin-top: $marginTable;
+    margin-bottom: $marginTable;
+    border: $borderTable;
+
+    tr {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.1em;
+      flex-direction: row;
+
+      .damage-id {
+        width: 20%;
+      }
+
+      .damage-name {
+        width: 20%;
+      }
+
+      .damage-description {
+        width: 30%;
+      }
+
+      .damage-moves {
+        width: 30%;
+      }
+    }
+
+    tr, td, th {
+      border: $borderTable;
+      padding: 1em;
+    }
+  }
+}

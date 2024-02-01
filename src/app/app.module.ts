@@ -27,6 +27,9 @@ import { MovesComponent } from './moves/moves.component';
 import { MoveAilmentComponent } from './move-ailment/move-ailment.component';
 import { BattleStyleComponent } from './battle-style/battle-style.component';
 import { MoveCategoryComponent } from './move-category/move-category.component';
+import { MoveDamageClassComponent } from './move-damage-class/move-damage-class.component';
+import { MoveLearnMethodsComponent } from './move-learn-methods/move-learn-methods.component';
+import { MoveTargetComponent } from './move-target/move-target.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { MoveCategoryComponent } from './move-category/move-category.component';
     MovesComponent,
     MoveAilmentComponent,
     BattleStyleComponent,
-    MoveCategoryComponent
+    MoveCategoryComponent,
+    MoveDamageClassComponent,
+    MoveLearnMethodsComponent,
+    MoveTargetComponent
   ],
   imports: [
     BrowserModule,

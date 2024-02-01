@@ -1,0 +1,21 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Movimientos</th>
+    </tr>
+    <tr *ngFor="let dam of clases">
+      <td class="damage-id"> {{dam.id}} </td>
+      <td class="damage-name"> {{dam.name}} </td>
+      <td class="damage-description"> {{dam.descriptions[5].description}} </td>
+      <td class="damage-moves">
+        <span *ngFor="let move of dam.moves">
+          <br>
+          {{move.name}}
+        </span>
+      </td>
+    </tr>
+  </table>
+</main>

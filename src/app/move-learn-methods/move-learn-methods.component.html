@@ -1,0 +1,30 @@
+<main>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Versión</th>
+    </tr>
+    <tr *ngFor="let method of metodos">
+      <td method-learn-id>{{ method.id }}</td>
+      <td method-learn-name>{{ method.name }}</td>
+
+      <td class="method-learn-description" >
+        <span *ngFor="let d of method.descriptions" >
+          <span *ngIf="d.language.name == 'en'">
+            {{ d.description }}
+          </span>
+        </span>
+      </td>
+      <td method-learn-group>
+        <span *ngIf="method.version_groups[0] == null || method.version_groups[0] == undefined; else conVersion"> No Version </span>
+        <ng-template #conVersion>
+          {{ method.version_groups[0].name }}
+        </ng-template>
+
+
+      </td>
+    </tr>
+  </table>
+</main>
