@@ -3,6 +3,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
+  cursor: pointer;
   nav {
     background-color: #000;
     overflow: hidden;
@@ -26,8 +27,12 @@ header {
         background-color: black;
         display: flex;
 
-        &:hover ~ ul {
+        /*&:hover ~ ul {
           display: inline-block;
+        }*/
+
+        & ~ ul {
+          display: none;
         }
 
         a {

@@ -32,6 +32,8 @@ import { MoveLearnMethodsComponent } from './move-learn-methods/move-learn-metho
 import { MoveTargetComponent } from './move-target/move-target.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
 import { EggGroupsComponent } from './egg-groups/egg-groups.component';
+import { CharacteristicsComponent } from './characteristics/characteristics.component';
+import { NatureComponent } from './nature/nature.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { EggGroupsComponent } from './egg-groups/egg-groups.component';
     MoveLearnMethodsComponent,
     MoveTargetComponent,
     AbilitiesComponent,
-    EggGroupsComponent
+    EggGroupsComponent,
+    CharacteristicsComponent,
+    NatureComponent
   ],
   imports: [
     BrowserModule,

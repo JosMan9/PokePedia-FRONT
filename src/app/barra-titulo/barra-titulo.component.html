@@ -2,30 +2,24 @@
   <p>hola mundo</p>
   <nav>
     <ul>
-      <li class="menu menu-bayas" #barraBayas (click)="desplegarBayas(barraBayas)">
-        <a href="">Bayas</a>
+      <li class="menu menu-bayas" #barraBayas (mouseenter)="desplegarBayas(subBarraBayas)" (click)="contraerBayas(subBarraBayas)">
+        <a >Bayas</a>
       </li>
-      <ul class="submenu-bayas">
-        <li> <a href="#">Bayas</a></li>
-        <li><a href="#">Firmeza de las bayas</a></li>
-        <li><a href="#">Sabor de las bayas</a></li>
+      <ul class="submenu-bayas" #subBarraBayas>
+        <li> <a routerLink="/bayas">Bayas</a></li>
       </ul>
 
-      <li class="menu menu-concursos">
-        <a href="">Concursos</a>
+      <li class="menu menu-concursos" #barraConcursos (mouseenter)="desplegarConcursos(subBarraConcursos)" (click)="contraerConcursos(subBarraConcursos)">
+        <a>Concursos</a>
       </li>
-      <ul class="submenu-concursos">
-        <li><a href="#">Tipos de concursos</a></li>
-        <li><a href="#">Efectos de concurso</a></li>
-        <li><a href="#">Efectos de super concursos</a></li>
+      <ul class="submenu-concursos" #subBarraConcursos>
+        <li><a routerLink="/concursos">Tipos de concursos</a></li>
       </ul>
-      <li class="menu menu-encuentros" >
-        <a href="#">Encuentros</a>
+      <li class="menu menu-encuentros" #barraEncuentros (mouseenter)="desplegarEncuentros(subBarraEncuentros)" (click)="contraerEncuentros(subBarraEncuentros)">
+        <a>Encuentros</a>
       </li>
-      <ul class="submenu-encuentros">
-        <li><a href="#">Métodos de encuentros</a></li>
-        <li><a href="#">Condiciones de encuetros</a></li>
-        <li><a href="#">Valores de las condiciones de encuentros</a></li>
+      <ul class="submenu-encuentros" #subBarraEncuentros>
+        <li><a routerLink="/encuentros">Métodos de encuentros</a></li>
       </ul>
       <li class="menu menu-evolucion">
         <a href="">Evolución</a>
